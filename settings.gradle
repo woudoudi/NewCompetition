@@ -1,0 +1,7 @@
+include ':app',':scanlistlibrary',':module_lib', ':tbs_live_lib',':http_lib', ':live_room_lib'
+
+include ':jpush:chatapp'
+include ':jpush:emoji'
+include ':jpush:reclib-qq'
+include ':jpush:reclib-testemoticons'
+include ':jpush:head_lib'

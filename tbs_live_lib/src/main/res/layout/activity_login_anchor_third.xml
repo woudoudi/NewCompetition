@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_layout"/>
+
+    <TextView
+        android:id="@+id/tv_live_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:text="直播标题"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_bg"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_good_hero"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:text="擅长英雄"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_bg"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_win_rate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:text="胜率"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_bg"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更换封面"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_marginTop="55dp"/>
+
+    <ImageView
+        android:id="@+id/iv_live_cover"
+        android:layout_width="167dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_start_live"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="开始直播"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/color_BCA081"
+        android:layout_marginTop="100dp"/>
+
+</LinearLayout>

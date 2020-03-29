@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_bet_rule"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="押注规则"
+        android:textSize="13sp"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_D8D8D8"/>
+
+    <TextView
+        android:id="@+id/tv_bet_record"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="押注记录"
+        android:textSize="13sp"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+
+
+</LinearLayout>

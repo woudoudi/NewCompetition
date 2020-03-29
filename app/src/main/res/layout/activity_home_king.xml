@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_layout_1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_king_live"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/king_direct_layout">
+
+            <TextView
+                android:id="@+id/tv_king_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:text="王者直播"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_king_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_king_title"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:text="直观大神骚操作，世界杯模式，好玩到爆"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/record_layout">
+
+            <TextView
+                android:id="@+id/tv_trumpet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:text="录播回放"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_trumpet_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_trumpet_title"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:text="停留竞猜瞬间"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_free_confrontation"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/free_confront_layout">
+
+            <TextView
+                android:id="@+id/tv_free_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:text="自由对抗"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_free_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_free_title"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:text="好友solo，不服单挑"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2B4062"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/color_1C242F">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_2B4062"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="甲方"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_first_nick"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入游戏昵称"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_first_phone"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入全名竞技绑定手机号"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_first_number"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入对抗分数"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:src="@mipmap/confrontation_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/color_2B4062"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="乙方"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_second_nick"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入游戏昵称"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_second_phone"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入全名竞技绑定手机号"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_second_number"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/color_3E5D90"
+                android:gravity="center"
+                android:hint="请输入对抗分数"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColorHint="@color/color_999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_send_confrontation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/arrow_selector"
+                android:gravity="center"
+                android:text="发送对抗邀请"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

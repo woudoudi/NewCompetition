@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_guess_container"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_guess_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_guess_bg"
+            android:paddingLeft="4dp"
+            android:paddingTop="3dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:text="未开始"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_guess_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/guess_state_selector" />
+
+        <TextView
+            android:id="@+id/tv_person_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@mipmap/person"
+            android:drawablePadding="3dp"
+            android:text="1235"
+            android:textColor="@color/color_666666"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

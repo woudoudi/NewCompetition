@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/ll_guess_rootView">
+
+    <include layout="@layout/title_layout_1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_number_race"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="65dp"
+        android:background="@mipmap/trumpet_layout">
+
+        <TextView
+            android:id="@+id/tv_king_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数字抢答"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/tv_king_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不服来战，凭实力赚钱"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_king_title"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_king_mode"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="65dp"
+        android:background="@mipmap/king_subject_layout">
+
+        <TextView
+            android:id="@+id/tv_trumpet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王者专题"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/tv_trumpet_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王者知识小课堂"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_trumpet_title"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

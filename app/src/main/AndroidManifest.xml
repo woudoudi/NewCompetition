@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.competition">
+
+    <uses-sdk tools:overrideLibrary="com.yidao.module_lib,com.base.scanlistlibrary,razerdp.library,com.example.http_lib,jiguang.chat"/>
+
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--点播播放器悬浮窗权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--存储-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <application
+        android:name=".application.ComApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon,android:theme">
+
+        <activity android:name=".activity.my.MyIntegralActivity"/>
+        <activity android:name=".activity.my.MyAboutUsActivity" />
+        <activity android:name=".activity.my.MyBetActivity" />
+        <activity android:name=".activity.my.MyRechargeActivity" />
+        <activity android:name=".activity.my.MySettingActivity" />
+        <activity android:name=".activity.my.MyInviteActivity" />
+        <activity android:name=".activity.my.EditPersonalNickActivity" />
+
+        <activity android:name=".activity.home.HomeConfrontationSureActivity" />
+        <activity android:name=".activity.home.HomeFreeConfrontationActivity" />
+        <activity android:name=".activity.home.HomeKindActivity" />
+        <activity android:name=".activity.home.HomeRecordActivity" />
+        <activity android:name=".activity.home.HomeAddConfrontationActivity" />
+        <activity android:name=".activity.home.HomeVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme_play">
+
+        </activity>
+        <activity android:name=".activity.home.HomeGuessActivity" />
+
+        <activity android:name=".activity.guess.GuessRankingActivity" />
+        <activity android:name=".activity.guess.GuessCompetitionActivity" >
+
+        </activity>
+        <activity android:name=".activity.guess.GuessKingComonSenceActivity" />
+
+        <activity android:name=".activity.login.RegisterUserActivity" />
+        <activity android:name=".activity.login.UpdateUserActivity" />
+        <activity android:name=".activity.login.BindPhoneUserActivity" />
+        <activity android:name=".activity.login.LoginUserFirstActivity" />
+
+        <activity android:name=".activity.login.WelcomeActivity"
+            android:theme="@style/ApplicationTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.custom.CustomServiceActivity" />
+        <activity android:name=".TestActivity" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity android:name=".HomeActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <!--微信-->
+        <activity
+            android:name="com.qgc.user.live.wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:taskAffinity="net.sourceforge.simcpux"
+            android:launchMode="singleTask">
+        </activity>
+
+        <service android:name=".service.WebsocketService">
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+    </application>
+
+</manifest>

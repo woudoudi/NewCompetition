@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    
+    <LinearLayout
+        android:id="@+id/ll_free_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_2B4062"
+        android:padding="12dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请人"
+            android:textSize="13sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="啥不会比较好吧"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019.03.05 10:24"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对抗积分"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_bet_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="甲：200          乙：2000"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="36dp">
+
+            <TextView
+                android:id="@+id/tv_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="接受"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:background="@drawable/arrow_selector"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view_gap"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_refuce"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="拒绝"
+                android:textSize="13sp"
+                android:textColor="@color/color_333333"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/iv_bet_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/win_icon"
+        android:layout_alignRight="@+id/ll_free_container"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+    
+</RelativeLayout>

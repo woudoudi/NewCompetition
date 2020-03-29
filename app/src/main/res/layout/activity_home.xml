@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="首页"
+            android:textColor="@color/color_BCA081"
+            android:checked="true"
+            android:drawableTop="@drawable/check_home_selector"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="竞猜"
+            android:drawableTop="@drawable/check_guess_selector"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@color/color_999999"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/radio_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="3dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kefu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服"
+                android:textColor="@color/color_999999"/>
+        </LinearLayout>
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_custom"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:button="@null"-->
+            <!--android:text="客服"-->
+            <!--android:drawableTop="@mipmap/kefu"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="3dp"-->
+            <!--android:visibility="gone"/>-->
+
+        <RadioButton
+            android:id="@+id/radio_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="我的"
+            android:drawableTop="@drawable/check_my_selector"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@color/color_999999"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

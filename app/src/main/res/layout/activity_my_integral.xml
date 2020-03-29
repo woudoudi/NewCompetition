@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout_1"/>
+    
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:src="@mipmap/integral"
+        android:scaleType="fitXY"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1565"
+        android:textSize="24sp"
+        android:textColor="@color/color_333333"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/color_f0f0f0"
+        android:text="积分明细"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:textColor="@color/color_333333"/>
+
+
+    <com.base.scanlistlibrary.scanlist.ScanVideoPlayView
+        android:id="@+id/scan_bet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <include layout="@layout/title_layout_1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f0f0f0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:minHeight="49dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/iv_talk_more"
+                android:background="@drawable/et_bg"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingLeft="15dp"
+                    android:hint="请输入你想发送的内容"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/iv_send"/>
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/send"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_talk_more"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/talk_more"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_more"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/iv_talk_more"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/album"
+                    android:text="相册"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginLeft="45dp"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_taking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/taking"
+                    android:text="拍照"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/color_333333"
+                    android:drawablePadding="3dp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

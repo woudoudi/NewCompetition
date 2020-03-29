@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_1E1F24"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout"/>
+
+   <RelativeLayout
+       android:id="@+id/rl_bet_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+       <TextView
+           android:id="@+id/tv_king"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="王者专场"
+           android:textSize="13sp"
+           android:textColor="@color/color_999999"
+           android:gravity="center"
+           android:paddingLeft="25dp"
+           android:paddingRight="25dp"
+           android:paddingTop="6dp"
+           android:paddingBottom="6dp"
+           android:layout_marginLeft="15dp"
+           android:background="@drawable/bet_text_bg"/>
+
+
+       <TextView
+           android:id="@+id/tv_all_guess"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="全名竞技"
+           android:textSize="13sp"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:paddingLeft="25dp"
+           android:paddingRight="25dp"
+           android:paddingTop="6dp"
+           android:paddingBottom="6dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="15dp"
+           android:background="@drawable/bet_text_bg_press"/>
+
+
+   </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_bet_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
+
+</LinearLayout>

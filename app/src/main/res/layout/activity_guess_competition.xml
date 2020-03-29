@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_layout_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_38364C">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/trumpet_white"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_trumpet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每场收取服务费10%，第一名40%，第二名30%，第三20%"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tv_home_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主场：10/6"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/trigger"
+            android:layout_centerInParent="true"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_look_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旁观：5642"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_f0f0f0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间：20s"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第8题"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="得分：125"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/guess_layout">
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="200"
+            android:layout_weight="1"
+            android:text="5"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="200"
+            android:layout_weight="1"
+            android:text="+"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="200"
+            android:layout_weight="1"
+            android:text="8"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView4"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="200"
+            android:layout_weight="1"
+            android:text="-"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView5"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="200"
+            android:layout_weight="1"
+            android:text="8"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_home_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="49dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/iv_bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/touzi"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/iv_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/speak"
+                android:layout_marginLeft="20dp"/>
+
+            <!--语音输入-->
+            <jiguang.chat.view.RecordVoiceButton
+                android:id="@+id/btn_voice"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/iv_speak"
+                android:background="@drawable/btn_voice"
+                android:text="按住录音"
+                android:textColor="#727272"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="72dp"
+                android:layout_height="35dp"
+                android:text="取消准备"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/bet_text_state_selector"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_send_container"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/et_bg">
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="输入正确答案"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_999999"
+                    android:textColor="@color/color_333333"
+                    android:layout_toLeftOf="@+id/iv_send"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/send"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/rl_observe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_quizess_bet"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

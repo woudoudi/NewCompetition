@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_layout_1"/>
+    
+
+    <ImageView
+        android:id="@+id/iv_qrCode"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_invite_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请码：5645"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/color_f0f0f0"
+        android:text="分享规则"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1.分享给好友可以增加3次押注机会"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/color_333333"/>
+
+</LinearLayout>
